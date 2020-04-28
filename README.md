@@ -105,5 +105,5 @@ give_candygrams("Glen Coco", 4)
 
 ``` r
 give_candygrams("Gretchen Weiners", 4)
-#> [1] "None for Grethen Weiners."
+#> None for Gretchen Weiners.
 ```
