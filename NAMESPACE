@@ -3,6 +3,7 @@
 export(boo)
 export(fetch)
 export(give_candygrams)
+export(give_many_candygrams)
 export(nice_style)
 export(really_pretty)
 importFrom(english,as.english)
