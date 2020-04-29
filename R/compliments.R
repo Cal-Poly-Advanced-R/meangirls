@@ -2,7 +2,7 @@
 #'
 #' @param name The person's name
 #' @param follow_up Should the function follow up with questions?
-#' Defaults to `FALSE`.
+#' Defaults to `TRUE`.
 #'
 #' @return A compliment string
 #'
