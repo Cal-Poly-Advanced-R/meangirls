@@ -60,7 +60,7 @@ pretty.
 
 ``` r
 really_pretty("Cady", follow_up = FALSE)
-#> You're, like, really pretty, Cady.
+#> You're, like, really pretty Cady.
 ```
 
 ### Negating compliments
@@ -69,7 +69,7 @@ Both compliments can be negated with a follow-up phrase:
 
 ``` r
 really_pretty("Cady", follow_up = TRUE)
-#> [1] "You're, like, really pretty, Cady. So you agree?  You think you're really pretty?"
+#> [1] "You're, like, really pretty Cady. So you agree?  You think you're really pretty?"
 nice_style("bracelet", follow_up = TRUE)
 #> I love your bracelet!  Where did you get it? So vintage!
 #> That's the ugliest effing bracelet I've ever seen.
@@ -105,5 +105,5 @@ give_candygrams("Glen Coco", 4)
 
 ``` r
 give_candygrams("Gretchen Weiners", 4)
-#> [1] "None for Grethen Weiners."
+#> None for Gretchen Weiners.
 ```
