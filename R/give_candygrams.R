@@ -1,7 +1,7 @@
 #' Announces the number of candygrams for a person.
 #'
-#' @param person The candygram recipient..
-#' @param number How many grams they got.
+#' @param person The candygram recipient
+#' @param number How many grams they got
 #' @param extra_message A string giving extra commentary.
 #'
 #' @return A candy gram announcement
