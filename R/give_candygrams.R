@@ -45,14 +45,14 @@ add_commentary <- function(person, number) {
 
   if (stringr::str_detect(person, "Aaron")) {
 
-    return(" They are from Regina.")
+    return("They are from Regina.")
 
   }
 
 
   if (number > 3) {
 
-    return(glue::glue(" You go, {person}!"))
+    return(glue::glue("You go, {person}!"))
 
   }
 
