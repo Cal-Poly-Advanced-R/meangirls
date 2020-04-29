@@ -61,17 +61,23 @@ add_commentary <- function(person, number) {
 
 }
 
+#' Announces the number of candygrams per person.
+#'
+#' @param students The candygram recipient
+#' @param counts How many grams they got
+#'
+#' @return A candy gram announcement
+#'
+#' @importFrom purrr map2_chr
+#'
+#' @export
+give_many_candygrams <- function(students, counts) {
 
+  result <- purrr::map2_chr(students, counts, give_candygrams)
 
+  return(result)
 
-
-
-
-
-
-
-
-
+}
 
 
 
