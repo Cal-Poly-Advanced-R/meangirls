@@ -100,7 +100,7 @@ behavior:
 
 ``` r
 give_candygrams("Glen Coco", 4)
-#> Four for Glen Coco. You go, Glen Coco!
+#> Four for Glen Coco.You go, Glen Coco!
 ```
 
 ``` r
