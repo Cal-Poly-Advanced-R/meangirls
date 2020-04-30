@@ -9,7 +9,7 @@
 #' @export
 really_pretty <- function(name, follow_up = TRUE) {
 
-  compliment <- glue::glue("You're, like, really pretty, {name}.")
+  compliment <- glue::glue("You're, like, really pretty, {name}. So you agree?  You think you're really pretty?")
 
   if (follow_up) {
     compliment <- paste(compliment,
