@@ -36,7 +36,7 @@ give_candygrams <- function(person, number,
 }
 
 #' Tacks commentary on to candygram announcement
-#'
+#''
 #' @param person The candygram recipient
 #' @param number How many grams they got
 #'
