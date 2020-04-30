@@ -1,0 +1,10 @@
+\name{give_many_candygrams}
+\alias{give_many_candygrams}
+\title{Announces the number of candygrams to each person.}
+\usage{give_many_candygrams(students, counts)}
+\arguments{
+\item{students}{The candy gram recipient}
+\item{counts}{Number of candy grams the specified person recieved}
+}
+\value{A cnady gram announcement}
+\description{Announces the number of candygrams for a person.}
