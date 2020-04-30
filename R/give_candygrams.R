@@ -17,7 +17,7 @@ give_candygrams <- function(person, number,
 
   if (str_detect(person, "Gretchen")) {
 
-    return(cat("None for Gretchen Weiners."))
+    return("None for Gretchen Weiners.")
 
   }
 
@@ -30,14 +30,12 @@ give_candygrams <- function(person, number,
   number <- str_to_title(as.english(number))
 
 
-  glue::glue("{number} for {person}.")
-
-
+  glue::glue("{number} for {person}.{extra_message}")
 
 }
 
 #' Tacks commentary on to candygram announcement
-#'
+#''
 #' @param person The candygram recipient
 #' @param number How many grams they got
 #'
@@ -61,3 +59,5 @@ add_commentary <- function(person, number) {
   return("")
 
 }
+
+
