@@ -10,7 +10,7 @@
 #' @importFrom english as.english
 #'
 #' @export
-give_many_candygrams <- function(person, number, extra_message = NULL) {
+give_many_candygrams <- function(person, number, extra_message) {
   stopifnot(length(person) == length(number),
             length(person) == length(extra_message))
   gram_vec <- vector()
@@ -23,7 +23,7 @@ give_many_candygrams <- function(person, number, extra_message = NULL) {
       gram_vec <- append(gram_vec, gram)
     }
   }
-  cat(gram_vec, sep = "\n")
+  return(gram_vec)
 }
 
 
