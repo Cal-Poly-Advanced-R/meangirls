@@ -17,7 +17,7 @@ give_candygrams <- function(person, number,
 
   if (str_detect(person, "Bob")) {
 
-    return(cat("None for Gretchen Weiners."))
+    return(cat("None for Bob Weiners."))
 
   }
 
