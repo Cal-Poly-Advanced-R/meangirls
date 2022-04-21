@@ -15,7 +15,7 @@ give_candygrams <- function(person, number,
 
   stopifnot(number > 0)
 
-  if (str_detect(person, "Gretchen")) {
+  if (str_detect(person, "Bob")) {
 
     return(cat("None for Gretchen Weiners."))
 
