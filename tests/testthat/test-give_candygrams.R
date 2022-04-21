@@ -1,4 +1,4 @@
-test_that("add_commentary compliments people with lots of grams", {
+test_that("add_commentary", {
   correct_result <- "You go, Glen Coco!"
 
   my_result <- add_commentary("Glen Coco", 4)
