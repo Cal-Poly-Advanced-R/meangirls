@@ -91,7 +91,7 @@ You can also give extra commentary to your announcement:
 ``` r
 give_candygrams("Taylor Zimmerman", 2, 
                 extra_message = "Merry Christmas!")
-#> Two for Taylor Zimmerman. Merry Christmas!
+#> Two for Taylor Zimmerman.Merry Christmas!
 ```
 
 Some special cases trigger automatic extra commentary or special
@@ -99,7 +99,7 @@ behavior:
 
 ``` r
 give_candygrams("Glen Coco", 4)
-#> Four for Glen Coco. You go, Glen Coco!
+#> Four for Glen Coco.You go, Glen Coco!
 ```
 
 ``` r
