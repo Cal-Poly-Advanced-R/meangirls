@@ -9,7 +9,7 @@ test_that("add_commentary compliments people with lots of grams", {
 
 
 test_that("give_candygrams works", {
-  correct_result <- "Two for Taylor Zimmerman."
+  correct_result <- "Two for Taylor Zimmerman. "
 
   my_result <- give_candygrams("Taylor Zimmerman", 2)
 
