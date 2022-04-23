@@ -1,8 +1,8 @@
 test_that("really_pretty works", {
 
-  correct_result <- "You're, like, really pretty Cady."
+  correct_result <- "You're, like, really pretty, Cady."
 
-  my_result <- really_pretty("Cady")
+  my_result <- really_pretty("Cady", follow_up = FALSE)
 
   expect_equal(my_result, correct_result)
 })
