@@ -31,6 +31,7 @@ give_candygrams <- function(person, number,
 
 
   glue::glue("{number} for {person}.")
+  glue::glue("{number} for {person}. {extra_message}")
 
 
 
