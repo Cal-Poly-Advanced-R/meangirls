@@ -1,7 +1,7 @@
 #' Announces the number of candygrams for a person.
 #'
-#' @param person The candygram recipient
-#' @param number How many grams they got
+#' @param persons A vector of people
+#' @param number A numeric vector of how many grams each student got
 #' @param extra_message A string giving extra commentary.
 #'
 #' @return A candy gram announcement
@@ -10,12 +10,16 @@
 #' @importFrom english as.english
 #'
 #' @export
-give_candygrams <- function(person, number,
-                            extra_message = NULL) {
+give_many_candygrams <- function(persons, number,
+                            extra_message = NULL){
+
+  for (i in 1:length(person)){
+  num <- str_to_title(as.english(number[i]))
+  student <- person[i]
 
   stopifnot(number > 0)
 
-  if (str_detect(person, "Gretchen")) {
+  if (str_detect(student, "Gretchen")) {
 
     return(cat("None for Gretchen Weiners."))
 
@@ -23,17 +27,18 @@ give_candygrams <- function(person, number,
 
   if (is.null(extra_message)) {
 
-    extra_message <- add_commentary(person, number)
+    extra_message <- add_commentary(student, number)
 
   }
 
-  number <- str_to_title(as.english(number))
+  for (i in 1:length(person)){
 
 
-  glue::glue("{number} for {person}.")
+  glue::glue("{number} for {student}.{extra_message}")
 
+}
 
-
+  }
 }
 
 #' Tacks commentary on to candygram announcement
