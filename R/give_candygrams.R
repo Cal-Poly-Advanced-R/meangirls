@@ -10,6 +10,7 @@
 #' @importFrom english as.english
 #'
 #' @export
+#'
 give_candygrams <- function(person, number,
                             extra_message = NULL) {
 
@@ -46,7 +47,7 @@ add_commentary <- function(person, number) {
 
   if (stringr::str_detect(person, "Aaron")) {
 
-    return(cat("They are from Regina."))
+    return("They are from Regina.")
 
   }
 
