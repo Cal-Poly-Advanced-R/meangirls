@@ -46,7 +46,7 @@ add_commentary <- function(person, number) {
 
   if (stringr::str_detect(person, "Aaron")) {
 
-    return("They are from Regina.")
+    return(cat("They are from Regina."))
 
   }
 
