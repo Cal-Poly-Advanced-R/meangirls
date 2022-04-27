@@ -13,7 +13,7 @@ really_pretty <- function(name, follow_up = TRUE) {
 
   if (follow_up) {
     compliment <- paste(compliment,
-                        "So you agree?  You think you're really pretty?")
+                        "So you agree? You think you're really pretty?")
   }
 
   return(compliment)
