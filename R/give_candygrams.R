@@ -15,24 +15,23 @@ give_candygrams <- function(person, number,
 
   stopifnot(number > 0)
 
-  if (str_detect(person, "Gretchen")) {
-
-    return(cat("None for Gretchen Weiners."))
-
-  }
-
   if (is.null(extra_message)) {
 
     extra_message <- add_commentary(person, number)
 
   }
 
-  number <- str_to_title(as.english(number))
+  if (str_detect(person, "Gretchen")) {
 
+    glue::glue("None for Gretchen Weiners.")
 
-  glue::glue("{number} for {person}.")
+  } else {
 
+    number <- str_to_title(as.english(number))
 
+    glue::glue("{number} for {person}.{extra_message}")
+
+  }
 
 }
 
@@ -61,3 +60,25 @@ add_commentary <- function(person, number) {
   return("")
 
 }
+
+#' Announces the number of candygrams per person.
+#'
+#' @param students The candygram recipient
+#' @param counts How many grams they got
+#'
+#' @return A candy gram announcement
+#'
+#' @importFrom purrr map2_chr
+#'
+#' @export
+give_many_candygrams <- function(students, counts) {
+
+  result <- purrr::map2_chr(students, counts, give_candygrams)
+
+  return(result)
+
+}
+
+
+
+
