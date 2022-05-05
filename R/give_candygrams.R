@@ -11,7 +11,7 @@
 #'
 #' @export
 give_candygrams <- function(person, number,
-                            extra_message = NULL) {
+                            extra_message) {
 
   stopifnot(number > 0)
 
