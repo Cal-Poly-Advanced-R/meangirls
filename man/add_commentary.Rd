@@ -2,7 +2,8 @@
 % Please edit documentation in R/give_candygrams.R
 \name{add_commentary}
 \alias{add_commentary}
-\title{Tacks commentary on to candygram announcement}
+\title{Tacks commentary on to candygram announcement
+'}
 \usage{
 add_commentary(person, number)
 }
@@ -16,4 +17,5 @@ A string (possibly blank)
 }
 \description{
 Tacks commentary on to candygram announcement
+'
 }
