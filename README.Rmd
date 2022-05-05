@@ -107,5 +107,11 @@ give_candygrams("Glen Coco", 4)
 ```{r}
 give_candygrams("Gretchen Weiners", 4)
 ```
-
+```{r}
+students <- c("Taylor Zimmerman", "Glen Coco", "Gretchen Weiners") 
+numbers <- c(2, 4, 6)
+message <- c("Merry Christmas", "NULL", "NULL")
+gram_vec <- give_many_candygrams(students, numbers, message)
+cat(gram_vec, sep = "\n")
+```
 
