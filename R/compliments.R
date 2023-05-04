@@ -7,13 +7,13 @@
 #' @return A compliment string
 #'
 #' @export
-really_pretty <- function(name, follow_up = TRUE) {
+really_pretty <- function(name, follow_up = FALSE) {
 
-  compliment <- glue::glue("You're, like, really pretty, {name}.")
+  compliment <- glue::glue("You're, like, really pretty {name}.")
 
   if (follow_up) {
-    compliment <- paste(compliment,
-                        "So you agree?  You think you're really pretty?")
+    compliment <- glue::glue("{compliment}
+                             So you agree? You think you're really pretty?")
   }
 
   return(compliment)
