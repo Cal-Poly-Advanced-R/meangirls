@@ -1,6 +1,6 @@
 test_that("really_pretty works", {
 
-  correct_result <- "You're, like, really pretty Cady."
+  correct_result <- "You're, like, really pretty, Cady. So you agree?  You think you're really pretty?
 
   my_result <- really_pretty("Cady")
 
