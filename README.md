@@ -4,7 +4,6 @@
 # meangirls
 
 <!-- badges: start -->
-
 <!-- badges: end -->
 
 The goal of meangirls is to create quotes in the style of the 2004
@@ -105,5 +104,5 @@ give_candygrams("Glen Coco", 4)
 
 ``` r
 give_candygrams("Gretchen Weiners", 4)
-#> [1] "None for Grethen Weiners."
+#> None for Gretchen Weiners.
 ```
