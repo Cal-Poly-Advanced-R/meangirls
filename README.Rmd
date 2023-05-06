@@ -25,9 +25,9 @@ The goal of meangirls is to create quotes in the style of the
 
 You can install the the development version from [GitHub](https://github.com/) with:
 
-``` r
-# install.packages("devtools")
-devtools::install_github("Cal-Poly-Advanced-R/meangirls")
+```{r}
+#library(devtools)
+#devtools::install_github("Cal-Poly-Advanced-R/meangirls")
 ```
 
 ```{r}
