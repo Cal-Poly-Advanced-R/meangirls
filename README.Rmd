@@ -16,10 +16,10 @@ knitr::opts_chunk$set(
 # meangirls
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-The goal of meangirls is to create quotes in the style of the
-2004 instant classic movie, *Mean Girls*.
+The goal of meangirls is to create quotes in the style of the 2004 instant classic movie, *Mean Girls*.
 
 ## Installation
 
@@ -33,7 +33,6 @@ devtools::install_github("Cal-Poly-Advanced-R/meangirls")
 ```{r}
 library(meangirls)
 ```
-
 
 ## insults
 
@@ -49,10 +48,9 @@ You can use the function `fetch()` to insult someone's made-up slang word.
 fetch("Gretchen", "fetch")
 ```
 
-
 ## compliments
 
-You can use the function `nice_style()` to compliment someone's fashion choices.  
+You can use the function `nice_style()` to compliment someone's fashion choices.\
 The default adjective is "vintage", but you can supply your own.
 
 ```{r}
@@ -60,7 +58,6 @@ nice_style("bracelet")
 
 nice_style("bracelet", adjective = "colorful")
 ```
-
 
 You can use the function `really_pretty()` to tell someone they are pretty.
 
@@ -77,11 +74,9 @@ really_pretty("Cady", follow_up = TRUE)
 nice_style("bracelet", follow_up = TRUE)
 ```
 
-
 ## Handing out candygrams
 
-Finally, you can use the `give_candygrams()` function to announce the number of
-candygrams a person gets.
+Finally, you can use the `give_candygrams()` function to announce the number of candygrams a person gets.
 
 ```{r}
 give_candygrams("Taylor Zimmerman", 2)
@@ -96,9 +91,7 @@ give_candygrams("Taylor Zimmerman", 2,
                 extra_message = "Merry Christmas!")
 ```
 
-
 Some special cases trigger automatic extra commentary or special behavior:
-
 
 ```{r}
 give_candygrams("Glen Coco", 4)
@@ -107,5 +100,3 @@ give_candygrams("Glen Coco", 4)
 ```{r}
 give_candygrams("Gretchen Weiners", 4)
 ```
-
-
