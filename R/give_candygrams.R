@@ -10,8 +10,7 @@
 #' @importFrom english as.english
 #'
 #' @export
-give_candygrams <- function(person, number,
-                            extra_message = NULL) {
+give_candygrams <- function(person, number, extra_message = NULL) {
 
   stopifnot(number > 0)
 
@@ -30,7 +29,7 @@ give_candygrams <- function(person, number,
   number <- str_to_title(as.english(number))
 
 
-  glue::glue("{number} for {person}.")
+  glue::glue("{number} for {person}. {extra_message}")
 
 
 
