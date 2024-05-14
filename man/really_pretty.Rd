@@ -4,7 +4,7 @@
 \alias{really_pretty}
 \title{Tells someone they are pretty.}
 \usage{
-really_pretty(name, follow_up = TRUE)
+really_pretty(name, follow_up = FALSE)
 }
 \arguments{
 \item{name}{The person's name}
