@@ -1,19 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# meangirls
+meangirls
+=========
 
 <!-- badges: start -->
-
 <!-- badges: end -->
+The goal of meangirls is to create quotes in the style of the 2004 instant classic movie, *Mean Girls*.
 
-The goal of meangirls is to create quotes in the style of the 2004
-instant classic movie, *Mean Girls*.
+Installation
+------------
 
-## Installation
-
-You can install the the development version from
-[GitHub](https://github.com/) with:
+You can install the the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -24,7 +21,8 @@ devtools::install_github("Cal-Poly-Advanced-R/meangirls")
 library(meangirls)
 ```
 
-## insults
+insults
+-------
 
 You can use the function `boo()` to deliver a generic insult:
 
@@ -33,19 +31,18 @@ boo("jerk")
 #> Boo, you jerk
 ```
 
-You can use the function `fetch()` to insult someone’s made-up slang
-word.
+You can use the function `fetch()` to insult someone's made-up slang word.
 
 ``` r
 fetch("Gretchen", "fetch")
 #> Gretchen, stop trying to make fetch happen!  It's not going to happen!
 ```
 
-## compliments
+compliments
+-----------
 
-You can use the function `nice_style()` to compliment someone’s fashion
-choices.  
-The default adjective is “vintage”, but you can supply your own.
+You can use the function `nice_style()` to compliment someone's fashion choices.
+The default adjective is "vintage", but you can supply your own.
 
 ``` r
 nice_style("bracelet")
@@ -55,8 +52,7 @@ nice_style("bracelet", adjective = "colorful")
 #> I love your bracelet!  Where did you get it? So colorful!
 ```
 
-You can use the function `really_pretty()` to tell someone they are
-pretty.
+You can use the function `really_pretty()` to tell someone they are pretty.
 
 ``` r
 really_pretty("Cady", follow_up = FALSE)
@@ -75,10 +71,10 @@ nice_style("bracelet", follow_up = TRUE)
 #> That's the ugliest effing bracelet I've ever seen.
 ```
 
-## Handing out candygrams
+Handing out candygrams
+----------------------
 
-Finally, you can use the `give_candygrams()` function to announce the
-number of candygrams a person gets.
+Finally, you can use the `give_candygrams()` function to announce the number of candygrams a person gets.
 
 ``` r
 give_candygrams("Taylor Zimmerman", 2)
@@ -92,18 +88,17 @@ You can also give extra commentary to your announcement:
 ``` r
 give_candygrams("Taylor Zimmerman", 2, 
                 extra_message = "Merry Christmas!")
-#> Two for Taylor Zimmerman.
+#> Two for Taylor Zimmerman. Merry Christmas!
 ```
 
-Some special cases trigger automatic extra commentary or special
-behavior:
+Some special cases trigger automatic extra commentary or special behavior:
 
 ``` r
 give_candygrams("Glen Coco", 4)
-#> Four for Glen Coco.
+#> Four for Glen Coco. You go, Glen Coco!
 ```
 
 ``` r
 give_candygrams("Gretchen Weiners", 4)
-#> [1] "None for Grethen Weiners."
+#> None for Gretchen Weiners.
 ```
