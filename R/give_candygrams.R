@@ -6,7 +6,7 @@
 #'
 #' @return A candy gram announcement
 #'
-#' @importFrom stringr str_detect str_to_title
+#' @importFrom stringr str_detect str_to_title str_trim
 #' @importFrom english as.english
 #'
 #' @export
@@ -17,7 +17,7 @@ give_candygrams <- function(person, number,
 
   if (str_detect(person, "Gretchen")) {
 
-    return(cat("None for Gretchen Weiners."))
+    return("None for Gretchen Weiners.")
 
   }
 
@@ -30,7 +30,7 @@ give_candygrams <- function(person, number,
   number <- str_to_title(as.english(number))
 
 
-  glue::glue("{number} for {person}.")
+  str_trim(glue::glue("{number} for {person}. {extra_message}"))
 
 
 
