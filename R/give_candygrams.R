@@ -12,10 +12,12 @@
 #' @export
 give_candygrams <- function(person, number,
                             extra_message = NULL) {
+  library(stringr)
+  library(english)
 
   stopifnot(number > 0)
 
-  if (str_detect(person, "Gretchen")) {
+  if (stringr::str_detect(person, "Gretchen")) {
 
     return(cat("None for Gretchen Weiners."))
 
@@ -30,8 +32,7 @@ give_candygrams <- function(person, number,
   number <- str_to_title(as.english(number))
 
 
-  glue::glue("{number} for {person}.")
-
+  glue::glue("{number} for {person}.{extra_message}")
 
 
 }
@@ -61,3 +62,4 @@ add_commentary <- function(person, number) {
   return("")
 
 }
+
