@@ -6,7 +6,7 @@
 #'
 #' @return A candy gram announcement
 #'
-#' @importFrom stringr str_detect str_to_title
+#' @importFrom stringr str_detect str_to_title str_trim
 #' @importFrom english as.english
 #'
 #' @export
@@ -24,13 +24,13 @@ give_candygrams <- function(person, number,
   if (is.null(extra_message)) {
 
     extra_message <- add_commentary(person, number)
-
   }
 
   number <- str_to_title(as.english(number))
 
 
-  glue::glue("{number} for {person}.")
+  glue::glue("{number} for {person}. {extra_message}") |>
+    str_trim(side = "right")
 
 
 
