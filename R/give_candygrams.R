@@ -31,7 +31,7 @@ give_candygrams <- function(person, number,
 
 
   glue::glue("{number} for {person}. {extra_message}") %>%
-    str_trim
+    str_trim()
 
 
 
